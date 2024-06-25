@@ -27,7 +27,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - ${APP_PORT}:${APP_PORT}
+      - 7000-7003:${APP_PORT}
     deploy:
       replicas: 4
 
