@@ -28,6 +28,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - ${APP_PORT}:${APP_PORT}
+    deploy:
+      replicas: 4
 
 volumes:
   boilerplate-db:
